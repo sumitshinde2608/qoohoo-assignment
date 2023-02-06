@@ -2,13 +2,13 @@ import React from "react";
 
 const Card = (props) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#FFD7B1] p-2 mx-10 max-md:mb-12">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#FFD7B1] p-4 mx-10 max-md:mb-12 rounded-md">
       <img
-        className="w-72 h-72"
+        className="w-72 h-72 rounded-md"
         src={props.img}
         alt="Sunset in the mountains"
       />
-      <div className="px-6 py-4">
+      <div className=" py-4">
         <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
       </div>
       <div className="pb-2">
