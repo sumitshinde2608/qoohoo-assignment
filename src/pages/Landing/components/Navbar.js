@@ -1,20 +1,20 @@
 import React from "react";
-
+import profile from "./../../../assets/profile.jpg";
 const Navbar = () => {
   return (
     <div>
       <nav className="px-2 sm:px-4 py-1 rounded">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
-          <a href="" className="flex items-center">
+          <div className="flex items-center hover:cursor-pointer">
             <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-6 mr-3 sm:h-9"
-              alt="Flowbite Logo"
+              src={profile}
+              className="h-6 mr-3 rounded-full shadow rounded-full sm:h-9"
+              alt="Annette Black"
             />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
+            <span className="self-center whitespace-nowrap dark:text-white">
+              Annette Black
             </span>
-          </a>
+          </div>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
