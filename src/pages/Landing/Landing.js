@@ -5,16 +5,16 @@ const Landing = () => {
   return (
     <div className="h-screen bg-[#161E3C] text-white">
       <Navbar />
-      <div className="flex flex-col justify-center items-center h-full ml-2">
+      <div className="flex flex-col justify-center items-center h-full">
         {" "}
         {/* Courses div */}
-        <div className=" font-sans mb-8 flex items-center p-4">
+        <div className=" font-sans mb-8 flex items-center p-4 max-md:flex max-md:flex-col max-md:h-auto">
           <img
             src={profile}
             alt="profile"
-            className="w-104 h-80 border-2 border-b-8 border-r-8 border-white rounded-lg rounded-b-2xl rounded-r-xl rounded-l-3xl mr-2"
+            className="w-104 h-80 max-md:w-72 max-md:h-48 max-md:mb-4 border-2 border-white rounded-lg  mr-2"
           />
-          <div className="align h-full ml-2 grid grid-cols-1 gap-4 content-around max-md:flex max-md:flex-col">
+          <div className="align h-full ml-2 grid grid-cols-1 gap-4 content-around max-md:flex max-md:flex-col max-md:h-auto ">
             <div>
               <span className="text-[#F9A826] text-4xl font-black leading-28">
                 Get ready{" "}
@@ -29,7 +29,7 @@ const Landing = () => {
 
             <span className="font-normal text-2xl">Start with us today</span>
 
-            <button className="ml-2 h-16 w-64 bg-[#FB9B43] rounded-xl flex items-center justify-center font-medium text-black hover:text-[#FB9B43] hover:bg-white">
+            <button className="h-16 w-64 bg-[#FB9B43] rounded-xl flex items-center justify-center font-medium text-black hover:text-[#FB9B43] hover:bg-white">
               {" "}
               View all courses
               <svg
@@ -49,7 +49,7 @@ const Landing = () => {
           </div>
         </div>
         {/* Points div */}
-        <div className=""></div>
+        <div className="bg-green-200"></div>
       </div>
     </div>
   );
