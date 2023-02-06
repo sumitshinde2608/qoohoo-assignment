@@ -1,7 +1,7 @@
 import React from 'react'
-import Bootcamp from './pages/Bootcamp'
-import Courses from './pages/Courses'
-import Landing from './pages/Landing'
+import Bootcamp from './pages/Bootcamp/Bootcamp'
+import Courses from './pages/Courses/Courses'
+import Landing from './pages/Landing/Landing'
 
 const App = () => {
   return (
