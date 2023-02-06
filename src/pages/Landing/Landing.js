@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import Checks from "./components/Checks";
 import profile from "./../../assets/profile.jpg";
 const Landing = () => {
   return (
-    <div className="h-screen bg-[#161E3C] text-white">
+    <div className="h-screen bg-[#161E3C] text-white max-md:h-auto max-md:pb-4">
       <Navbar />
-      <div className="flex flex-col justify-center items-center h-full">
+      <div className="flex flex-col justify-center items-center h-full max-md:h-min">
         {" "}
         {/* Courses div */}
         <div className=" font-sans mb-8 flex items-center p-4 max-md:flex max-md:flex-col max-md:h-auto">
@@ -49,7 +50,11 @@ const Landing = () => {
           </div>
         </div>
         {/* Points div */}
-        <div className="bg-green-200"></div>
+        <div className=" flex justify-around w-4/5 max-md:flex-col">
+          <Checks text="500+ happy customers" />
+          <Checks text="Learn as you go" />
+          <Checks text="Self paced learning" />
+        </div>
       </div>
     </div>
   );
