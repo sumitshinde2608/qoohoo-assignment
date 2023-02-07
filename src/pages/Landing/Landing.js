@@ -30,7 +30,7 @@ const Landing = () => {
 
             <span className="font-normal text-2xl">Start with us today</span>
 
-            <button className="h-16 w-64 bg-[#FB9B43] rounded-xl flex items-center justify-center font-medium text-black hover:text-[#FB9B43] hover:bg-white">
+            <button className="h-16 w-64 bg-[#FB9B43] rounded-xl flex items-center justify-center font-medium text-black hover:text-[#FB9B43] hover:bg-white transform transition duration-500 hover:scale-105">
               {" "}
               View all courses
               <svg

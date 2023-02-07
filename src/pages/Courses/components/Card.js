@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = (props) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#FFD7B1] p-4 mx-10 max-md:mb-12 rounded-md">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-[#FFD7B1] p-4 mx-10 max-md:mb-12 rounded-md transform transition duration-500 hover:scale-110">
       <img
         className="w-72 h-72 rounded-md"
         src={props.img}

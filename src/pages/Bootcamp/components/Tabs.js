@@ -16,7 +16,7 @@ const Tabs = () => {
             <li className="-mb-px mr-2 last:mr-0 w-48 text-center max-md:w-full max-md:mb-4">
               <a
                 className={
-                  "text-sm font-bold px-5 py-3 shadow-lg rounded block leading-normal mx-4 text-[#161E3C] " +
+                  "text-sm font-bold px-5 py-3 shadow-lg rounded block leading-normal mx-4 transform transition duration-500 hover:scale-110 text-[#161E3C] " +
                   (openTab === 1
                     ? "text-white bg-[#FB9B43]"
                     : "text-white bg-[#FFD7B1]")
@@ -35,7 +35,7 @@ const Tabs = () => {
             <li className="-mb-px mr-2 last:mr-0 w-48 text-center max-md:w-full max-md:mb-4">
               <a
                 className={
-                  "text-sm font-bold px-5 py-3 shadow-lg rounded block leading-normal mx-4 text-[#161E3C]" +
+                  "text-sm font-bold px-5 py-3 shadow-lg rounded block leading-normal mx-4 transform transition duration-500 hover:scale-110 text-[#161E3C]" +
                   (openTab === 2
                     ? "text-white bg-[#FB9B43]"
                     : "text-white bg-[#FFD7B1]")
@@ -54,7 +54,7 @@ const Tabs = () => {
             <li className="-mb-px mr-2 last:mr-0 w-48 text-center max-md:w-full max-md:mb-4">
               <a
                 className={
-                  "text-sm font-bold  px-5 py-3 shadow-lg rounded block leading-normal mx-4 text-[#161E3C]" +
+                  "text-sm font-bold  px-5 py-3 shadow-lg rounded block leading-normal mx-4 transform transition duration-500 hover:scale-110 text-[#161E3C]" +
                   (openTab === 3
                     ? "text-white bg-[#FB9B43]"
                     : "text-white bg-[#FFD7B1]")
@@ -90,7 +90,7 @@ const Tabs = () => {
                       <div className="pb-2 mt-8">
                         <a
                           href=""
-                          className="inline-flex items-center align-center justify-center w-[16rem] px-3 py-2 text-md font-medium text-white bg-[#161E3C] rounded-lg hover:bg-white hover:text-black text-center"
+                          className="inline-flex items-center align-center justify-center w-[16rem] px-3 py-2 text-md font-medium text-white bg-[#161E3C] rounded-lg hover:bg-white hover:text-black text-center transform transition duration-500 hover:scale-105"
                         >
                           Join Now
                           <svg
@@ -133,7 +133,7 @@ const Tabs = () => {
                       <div className="pb-2 mt-8">
                         <a
                           href=""
-                          className="inline-flex items-center align-center justify-center w-[16rem] px-3 py-2 text-md font-medium text-white bg-[#161E3C] rounded-lg hover:bg-white hover:text-black text-center"
+                          className="inline-flex items-center align-center justify-center w-[16rem] px-3 py-2 text-md font-medium text-white bg-[#161E3C] rounded-lg hover:bg-white hover:text-black text-center transform transition duration-500 hover:scale-105"
                         >
                           Join Now
                           <svg
@@ -176,7 +176,7 @@ const Tabs = () => {
                       <div className="pb-2 mt-8">
                         <a
                           href=""
-                          className="inline-flex items-center align-center justify-center w-[16rem] px-3 py-2 text-md font-medium text-white bg-[#161E3C] rounded-lg hover:bg-white hover:text-black text-center"
+                          className="inline-flex items-center align-center justify-center w-[16rem] px-3 py-2 text-md font-medium text-white bg-[#161E3C] rounded-lg hover:bg-white hover:text-black text-center transform transition duration-500 hover:scale-105"
                         >
                           Join Now
                           <svg
