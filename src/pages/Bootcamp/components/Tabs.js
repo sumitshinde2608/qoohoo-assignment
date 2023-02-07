@@ -13,10 +13,10 @@ const Tabs = () => {
             className="flex mb-0 list-none flex-wrap pb-4 flex-row justify-center max-md:flex-col"
             role="tablist"
           >
-            <li className="-mb-px mr-2 last:mr-0 w-48 text-center">
+            <li className="-mb-px mr-2 last:mr-0 w-48 text-center max-md:w-full max-md:mb-4">
               <a
                 className={
-                  "text-sm font-bold px-5 py-3 shadow-lg rounded block leading-normal mx-4 text-[#161E3C]" +
+                  "text-sm font-bold px-5 py-3 shadow-lg rounded block leading-normal mx-4 text-[#161E3C] " +
                   (openTab === 1
                     ? "text-white bg-[#FB9B43]"
                     : "text-white bg-[#FFD7B1]")
@@ -32,7 +32,7 @@ const Tabs = () => {
                 Corporate
               </a>
             </li>
-            <li className="-mb-px mr-2 last:mr-0 w-48 text-center">
+            <li className="-mb-px mr-2 last:mr-0 w-48 text-center max-md:w-full max-md:mb-4">
               <a
                 className={
                   "text-sm font-bold px-5 py-3 shadow-lg rounded block leading-normal mx-4 text-[#161E3C]" +
@@ -51,7 +51,7 @@ const Tabs = () => {
                 Groups
               </a>
             </li>
-            <li className="-mb-px mr-2 last:mr-0 w-48 text-center">
+            <li className="-mb-px mr-2 last:mr-0 w-48 text-center max-md:w-full max-md:mb-4">
               <a
                 className={
                   "text-sm font-bold  px-5 py-3 shadow-lg rounded block leading-normal mx-4 text-[#161E3C]" +
@@ -71,14 +71,14 @@ const Tabs = () => {
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 break-words bg-[#FFD7B1] w-[68rem] h-[28rem] max-md:w-[24rem] mb-6 shadow-lg rounded-3xl">
+          <div className="relative flex flex-col min-w-0 break-words bg-[#FFD7B1] w-[68rem] h-[28rem] max-md:w-[24rem] max-md:h-min mb-6 shadow-lg rounded-3xl">
             <div className="px-12 flex-auto flex items-center">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                  <div className="flex">
-                    <div className="w-1/2 flex flex-col items-start py-3 justify-start text-[#161E3C]">
+                  <div className="flex max-md:flex-col-reverse">
+                    <div className="w-1/2 max-md:w-full flex flex-col items-start max-md:items-center py-3 justify-start text-[#161E3C]">
                       <span className="text-4xl font-extrabold mb-2">
-                        Ammet minim mollit
+                        Networking
                       </span>
                       <span className="leading-loose">
                         lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -109,17 +109,17 @@ const Tabs = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="w-1/2 flex items-center justify-end">
+                    <div className="w-1/2 max-md:w-full flex items-center justify-end max-md:justify-center">
                       <img
                         src={train}
-                        className="h-4/5 w-4/5 border-4 b-white rounded-lg"
+                        className="h-4/5 w-4/5 max-md:w-full max-md:mt-4 border-4 b-white rounded-lg"
                       />
                     </div>
                   </div>
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                  <div className="flex">
-                    <div className="w-1/2 flex flex-col items-start py-3 justify-start text-[#161E3C]">
+                  <div className="flex max-md:flex-col-reverse">
+                    <div className="w-1/2 max-md:w-full flex flex-col items-start max-md:items-center py-3 justify-start text-[#161E3C]">
                       <span className="text-4xl font-extrabold mb-2">
                         Wine tasting
                       </span>
@@ -152,17 +152,18 @@ const Tabs = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="w-1/2 flex items-center justify-end">
+                    <div className="w-1/2 max-md:w-full flex items-center justify-end max-md:justify-center">
                       <img
                         src={wine}
-                        className="h-4/5 w-4/5 border-4 b-white rounded-lg"
+                        className="h-4/5 w-4/5 max-md:w-full max-md:mt-4 border-4 b-white rounded-lg"
                       />
                     </div>
                   </div>
                 </div>
                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                  <div className="flex">
-                    <div className="w-1/2 flex flex-col items-start py-3 justify-start text-[#161E3C]">
+                  <div className="flex max-md:flex-col-reverse">
+                    <div className="w-1/2 max-md:w-full flex flex-col items-start max-md:items-center py-3 justify-start text-[#161E3C]">
+                      {" "}
                       <span className="text-4xl font-extrabold mb-2">
                         Cinematography
                       </span>
@@ -172,7 +173,6 @@ const Tabs = () => {
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea
                       </span>
-
                       <div className="pb-2 mt-8">
                         <a
                           href=""
@@ -195,10 +195,10 @@ const Tabs = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="w-1/2 flex items-center justify-end">
+                    <div className="w-1/2 max-md:w-full flex items-center justify-end max-md:justify-center">
                       <img
                         src={cinematography}
-                        className="h-4/5 w-4/5 border-4 b-white rounded-lg"
+                        className="h-4/5 w-4/5 max-md:w-full max-md:mt-4 border-4 b-white rounded-lg"
                       />
                     </div>
                   </div>
