@@ -10,7 +10,15 @@ const Bootcamp = () => {
       <div>
         <Tabs />
       </div>
-      <div className="h-24 w-full bg-[#C1CFFF]"></div>{" "}
+      <div className="h-24 w-full bg-[#C1CFFF] flex justify-between items-center">
+        <div className="mx-44">
+          Powered by <span className="font-bold text-xl">TYME</span>
+        </div>
+        <div className="flex w-96 justify-evenly">
+          <div> Privacy Policy</div>
+          <div>Terms & Conditions</div>
+        </div>
+      </div>{" "}
     </div>
   );
 };
