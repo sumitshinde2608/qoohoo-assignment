@@ -9,7 +9,7 @@ const Courses = () => {
   const ref = useRef();
   const inViewport = useIntersection(ref, "-200px");
   if (inViewport) {
-    ref.current.classList.add("animate-fade-in-down");
+    ref.current.classList.add("animate-fade-in-up");
   }
   return (
     <div

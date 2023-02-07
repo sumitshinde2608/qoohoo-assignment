@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
+import useIntersection from "../../hooks/useIntersection";
 import Tabs from "./components/Tabs";
 
 const Bootcamp = () => {
+  const ref = useRef();
+  const inViewport = useIntersection(ref, "-200px");
+  if (inViewport) {
+    ref.current.classList.add("animate-fade-in-up");
+  }
   return (
-    <div className="h-screen grid grid-cols-1 gap-4 content-between justify-items-center max-md:h-auto">
+    <div
+      ref={ref}
+      className="h-screen grid grid-cols-1 gap-4 content-between justify-items-center max-md:h-auto"
+    >
       <div className="text-4xl font-sans font-extrabold text-[#161E3C] mt-24 w-full text-center">
         Bootcamps
       </div>
