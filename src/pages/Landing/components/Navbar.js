@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div>
       <nav className="px-2 sm:px-4 py-1 rounded">
-        <div className="container flex flex-wrap items-center justify-between mx-auto">
+        <div className="flex flex-wrap items-center justify-between">
           <div className="flex items-center hover:cursor-pointer">
             <img
               src={profile}

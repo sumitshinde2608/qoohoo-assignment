@@ -5,7 +5,7 @@ import Landing from "./pages/Landing/Landing";
 
 const App = () => {
   return (
-    <div className="scroll-smooth">
+    <div className="max-sm:w-full">
       <Landing />
       <Courses />
       <Bootcamp />

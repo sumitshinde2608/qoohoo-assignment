@@ -71,7 +71,7 @@ const Tabs = () => {
               </a>
             </li>
           </ul>
-          <div className="relative flex flex-col min-w-0 break-words bg-[#FFD7B1] w-[68rem] h-[28rem] max-md:w-[24rem] max-md:h-min mb-6 shadow-lg rounded-3xl">
+          <div className="relative flex flex-col min-w-0 break-words bg-[#FFD7B1] w-[56rem] h-[28rem] max-md:w-[24rem] max-lg:w-auto max-md:h-min mb-6 shadow-lg rounded-3xl">
             <div className="px-12 flex-auto flex items-center">
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
